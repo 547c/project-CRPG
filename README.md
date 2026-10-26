@@ -1,28 +1,28 @@
-# Project_JRPG
+# Project_CRPG
 
-This is 2D open-world JRPG where your choices change your world. Every decision contributes to the state system that shapes how NPCs treat you, which story branches open up, and which ending you land on.
+This is 2D RPG where your choices change your world. Every decision contributes to the state system that shapes how NPCs treat you, which story branches open up, and which ending you land on.
 
 ![Village tour](docs/screenshots/01_opening_village_tour.gif)
 
 ## What is this
 
-Project_JRPG is an open-world JRPG built in Godot. You can explore small 2d pixel world, fight in turn-based card battles, talk to NPCs to earn affinity, take on different quests, and make choices that actually carry weight. The game tracks what you've done through a flag-based state management system, and the story (Part 1 and Part 2 so far, 5 endings) branches based on that history.
+Project_CRPG is an video game built in Godot. You can explore small 2d pixel world, fight in turn-based card battles, talk to NPCs to earn affinity, take on different quests, and make choices that actually carry weight. The game tracks what you've done through a flag-based state management system, and the story (Part 1 and Part 2 so far, 5 endings) branches based on that history.
 
 ## Why I built this
 
 In high school, I made a branching visual novel in Ren'Py. The problem was that every choice only changed the very next line, or which ending screen you hit at the end. Nothing really carried across the story. I wanted to fix that, but not by making a better visual novel game. I wanted a real game with full movement, combat, inventory, dialogue, all of it, with a state system running underneath that actually remembers what you did, all the way through.
 
-That's what this is. The state management system was never the end goal by itself — it's what makes the story worth playing more than once.
+That's what this is. The state management system was never the end goal by itself. It's what makes the story worth playing more than once.
 
 ## Features
 
-### Open-world exploration
+### Exploration
 Village, forest, desert, dungeons, and cave areas connected through a scene transition system, with basic exploration elements like hidden chests and interactable NPCs. (I have plans to build out deeper sub-quests and more interactive environment mechanics in future updates.)
 
 ### State-driven dialogue & NPCs
 ![Village dialogue](docs/screenshots/09_village_dialogue.gif)
 
-Seven NPCs (Elara, Rohan, Yusuf, Mia, Kamil, Nadim, Kasim), each with a 0-100 affinity score that shifts based on dialogue choices and drives their tone and which content opens up — not just whether you finished a specific quest, but the accumulated pattern of what you did.
+Seven NPCs (Elara, Rohan, Yusuf, Mia, Kamil, Nadim, Kasim), each with a 0-100 affinity score that shifts based on dialogue choices and drives their tone and which content opens up (not just whether you finished a specific quest, but the accumulated pattern of what you did.)
 
 ### Turn-based card combat
 ![Combat 1](docs/screenshots/02_combat_1.gif)
@@ -81,15 +81,9 @@ Audio control and full Korean/English localization with a toggle (English transl
 - [x] Per-card VFX/SFX, tier-3 cards with custom cutscene animations
 - [x] Side quests tied to specific monster encounters, gating story progress
 
-**Not done yet**
-- [ ] Additional playable classes (stretch goal)
-
 ## Roadmap
-
-- Part 1 and Part 2 are done. Preparing a demo release on Steam and itch.io.
-- Next up is a side project called **AI in NPC** — using something like Inworld AI to build an NPC whose responses aren't pre-written branches, but generated live based on what you actually say. The plan is to make one prototype and use that AI-driven NPC into Project_JRPG as an experiment, kept outside the main story and endings at first — just a resident/helper character, to test the idea without risking the rest of the game.
-- The bigger goal past that isn't really Project_JRPG itself. It's working toward a future game where AI genuinely shapes the world and the ending based on how you play, instead of picking between paths I wrote in advance. This project, and the AI NPC experiment after it, are both steps toward that.
-- Full Steam release planned for next year.
+- Next up is a side project called **project Gen-NPC**.
+- The bigger goal past that isn't really Project_CRPG itself. It's working toward a future game where AI genuinely shapes the world and the ending based on how you play, instead of picking between paths I wrote in advance. This project, and the AI NPC experiment after it, are both steps toward that.
 
 ## Assets & Credits
 
